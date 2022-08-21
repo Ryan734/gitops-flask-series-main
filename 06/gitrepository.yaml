@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: gitops-series
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  # replace with your username  
+  url: https://github.com/paktek123/gitops-series

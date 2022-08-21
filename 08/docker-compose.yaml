@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  chartmuseum:
+    image: ghcr.io/helm/chartmuseum:v0.13.1
+    container_name: chartmuseum
+    ports:
+      - "8080:8080"
+    environment:
+      - STORAGE=local
+      - STORAGE_LOCAL_ROOTDIR=/tmp

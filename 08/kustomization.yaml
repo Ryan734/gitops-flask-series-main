@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../base/ingress-nginx/
+  - ./flask/
+patchesStrategicMerge:
+  - patches/ingress-nginx-deployment.yaml
+  - patches/ingress-nginx-service.yaml

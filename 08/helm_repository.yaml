@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: localchartmuseum
+  namespace: flux-system
+spec:
+  url: http://192.168.0.11:8080 # replace with your local IP, same as part 6
+  interval: 10m
