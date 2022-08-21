@@ -1,0 +1,6 @@
+bash
+# gitops-flask-kubernetes/requirements.txt
+
+Flask==2.0.1
+kubernetes==17.17.0
+pytest==6.2.4
